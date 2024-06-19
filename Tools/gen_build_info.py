@@ -21,7 +21,7 @@ SERVER_FILES = [
 
 VERSION = os.environ['GITHUB_SHA']
 FORK_ID = "nebulous"
-BUILD_URL = f"https://builds.nebulousstories.org/{{FORK_ID}}/builds/{{FORK_VERSION}}/{FILE}"
+BUILD_URL = f"https://builds.nebulousstories.org/{{FORK_ID}}/{{FORK_VERSION}}/{FILE}"
 MANIFEST_URL = f"https://cdn.nebulousstories.org/version/{{FORK_VERSION}}/manifest"
 MANIFEST_DOWNLOAD_URL = f"https://cdn.nebulousstories.org/version/{{FORK_VERSION}}/download"
 
