@@ -19,4 +19,11 @@
   id: 3
   time: '2024-06-20T16:29:19.0000000+00:00'
   url: https://github.com/Nebulous-Stories/Nebulous-Stories/pull/4
+- author: DLondon
+  changes:
+  - message: Added some rare funnies to the Ion Storm laws
+    type: Add
+  id: 4
+  time: '2024-06-20T20:43:19.0000000+00:00'
+  url: https://github.com/Nebulous-Stories/Nebulous-Stories/pull/6
 Order: 1
