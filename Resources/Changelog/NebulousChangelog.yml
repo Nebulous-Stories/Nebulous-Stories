@@ -12,4 +12,11 @@
   id: 2
   time: '2024-06-20T16:08:32.0000000+00:00'
   url: https://github.com/Nebulous-Stories/Nebulous-Stories/pull/3
+- author: NullWanderer
+  changes:
+  - message: Players are no longer allowed to record replays locally
+    type: Remove
+  id: 3
+  time: '2024-06-20T16:29:19.0000000+00:00'
+  url: https://github.com/Nebulous-Stories/Nebulous-Stories/pull/4
 Order: 1
