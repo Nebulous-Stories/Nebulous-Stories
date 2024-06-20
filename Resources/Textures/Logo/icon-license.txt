@@ -1,7 +1,6 @@
-The files below are licensed under CC-BY-SA 4.0 by the author who can be found at https://leonardo-dabepis.tumblr.com/
+The files below are licensed under CC-BY-SA 4.0 by the author who can be found at https://github.com/adeinitas
 
 icon.ico
-icon.svg
 icon/icon-16x16.png
 icon/icon-24x24.png
 icon/icon-32x32.png
@@ -11,4 +10,3 @@ icon/icon-128x128.png
 icon/icon-256x256.png
 logo.svg
 logo.png
-slashlogo.png
