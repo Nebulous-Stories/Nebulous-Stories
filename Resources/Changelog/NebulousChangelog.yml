@@ -1,8 +1,15 @@
-Order: 1
-Entries:
+﻿Entries:
 - author: NullWanderer
   changes:
   - message: Removed fun
     type: Remove
   id: 1
   time: '2024-06-20T00:00:00.0000000+00:00'
+- author: Lyndomen
+  changes:
+  - message: Revenants may no longer naturally spawn
+    type: Tweak
+  id: 2
+  time: '2024-06-20T16:08:32.0000000+00:00'
+  url: https://github.com/Nebulous-Stories/Nebulous-Stories/pull/3
+Order: 1
