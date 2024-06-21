@@ -1,0 +1,54 @@
+[game]
+hostname           = "[18+][HRP] Nebulous Stories"
+desc               = "A roleplay focused 18+ server featuring Delta-V content, chaos, and traditional antagonists. We want support players to do cool things and tell collaborative stories."
+lobbyenabled       = true
+lobbyduration      = 240
+round_end_pacifist = true
+soft_max_players   = 80
+
+[infolinks]
+discord    = "https://discord.gg/kPrazvaXmd"
+github     = "https://github.com/Nebulous-Stories/Nebulous-Stories"
+bug_report = "https://github.com/Nebulous-Stories/Nebulous-Stories/issues/new/choose"
+appeal     = "https://discord.gg/kPrazvaXmd"
+#website    = ""
+#wiki       = ""
+#patreon    = ""
+#forum      = ""
+
+[hub]
+tags = "lang:en-US,region:eu_w,rp:high,no_tag_infer,18+"
+
+[net]
+max_connections = 1024
+tickrate        = 30
+
+[vote]
+restart_required_ratio = 0.7
+map_enabled            = true
+
+[netres]
+limit = 10.0
+
+[admin]
+see_own_notes   = true
+deadmin_on_join = true
+
+[events]
+ramping_average_end_time = 180.0
+ramping_average_chaos    = 4.5
+
+[server]
+id = "nebulous"
+
+#[discord] # TODO - After release
+#rich_main_icon_id = ""
+
+[ic]
+flavor_text = true
+
+#[worldgen]
+#enabled = true
+
+[shuttle]
+emergency_early_launch_allowed = true
