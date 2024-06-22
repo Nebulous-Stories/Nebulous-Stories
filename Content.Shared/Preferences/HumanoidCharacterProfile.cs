@@ -38,7 +38,7 @@ namespace Content.Shared.Preferences
         private static readonly Regex ICNameCaseRegex = new(@"^(?<word>\w)|\b(?<word>\w)(?=\w*$)");
 
         public const int MaxNameLength = 32;
-        public const int MaxDescLength = 512;
+        public const int MaxDescLength = 1024; // Nebulous Stories, larger character descriptions, was 512
 
         /// <summary>
         /// Job preferences for initial spawn.

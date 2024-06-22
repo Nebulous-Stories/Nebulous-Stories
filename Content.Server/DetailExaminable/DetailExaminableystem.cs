@@ -21,7 +21,7 @@ namespace Content.Server.DetailExaminable
             if (Identity.Name(args.Target, EntityManager) != MetaData(args.Target).EntityName)
                 return;
 
-            var detailsRange = _examineSystem.IsInDetailsRange(args.User, uid);
+            var detailsRange = _examineSystem.IsInDetailedDescriptionRange(args.User, uid); // Nebulous Stories - Use the DetailedDescriptionRange
 
             var verb = new ExamineVerb()
             {
