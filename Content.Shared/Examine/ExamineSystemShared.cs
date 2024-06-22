@@ -41,7 +41,7 @@ namespace Content.Shared.Examine
 
         public const float ExamineRange = 16f;
         protected const float ExamineDetailsRange = 3f;
-        protected const float ExamineDetailedDescriptionRange = 5f; // Nebulous Stories - Range for detailed descriptions
+        protected const float ExamineDetailedDescriptionRange = 6f; // Nebulous Stories - Range for detailed descriptions
 
         protected const float ExamineBlurrinessMult = 2.5f;
 
