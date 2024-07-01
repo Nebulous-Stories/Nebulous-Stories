@@ -81,6 +81,12 @@ namespace Content.Shared.Preferences
         public string FlavorText { get; set; } = string.Empty;
 
         /// <summary>
+        /// Nebulous - Flavor text, but OOC. Also tied into <see cref="CCVars.FlavorText"/>.
+        /// </summary>
+        [DataField]
+        public string OOCFlavorText { get; set; } = string.Empty;
+
+        /// <summary>
         /// Associated <see cref="SpeciesPrototype"/> for this profile.
         /// </summary>
         [DataField]
@@ -137,6 +143,7 @@ namespace Content.Shared.Preferences
         public HumanoidCharacterProfile(
             string name,
             string flavortext,
+            string oocFlavorText, // Nebulous
             string species,
             int age,
             Sex sex,
@@ -151,6 +158,7 @@ namespace Content.Shared.Preferences
         {
             Name = name;
             FlavorText = flavortext;
+            OOCFlavorText = oocFlavorText; // Nebulous
             Species = species;
             Age = age;
             Sex = sex;
@@ -182,6 +190,7 @@ namespace Content.Shared.Preferences
         public HumanoidCharacterProfile(HumanoidCharacterProfile other)
             : this(other.Name,
                 other.FlavorText,
+                other.OOCFlavorText, // Nebulous
                 other.Species,
                 other.Age,
                 other.Sex,
@@ -279,6 +288,11 @@ namespace Content.Shared.Preferences
         public HumanoidCharacterProfile WithFlavorText(string flavorText)
         {
             return new(this) { FlavorText = flavorText };
+        }
+
+        public HumanoidCharacterProfile WithOOCFlavorText(string oocFlavorText) // Nebulous
+        {
+            return new(this) { OOCFlavorText = oocFlavorText };
         }
 
         public HumanoidCharacterProfile WithAge(int age)
@@ -468,6 +482,7 @@ namespace Content.Shared.Preferences
             if (!_traitPreferences.SequenceEqual(other._traitPreferences)) return false;
             if (!Loadouts.SequenceEqual(other.Loadouts)) return false;
             if (FlavorText != other.FlavorText) return false;
+            if (OOCFlavorText != other.OOCFlavorText) return false; // Nebulous
             return Appearance.MemberwiseEquals(other.Appearance);
         }
 
@@ -547,6 +562,17 @@ namespace Content.Shared.Preferences
                 flavortext = FormattedMessage.RemoveMarkup(FlavorText);
             }
 
+            // Nebulous - Start of modified code
+            string oocFlavorText;
+            if (OOCFlavorText.Length > MaxDescLength)
+            {
+                oocFlavorText = FormattedMessage.RemoveMarkup(OOCFlavorText)[..MaxDescLength];
+            }
+            else
+            {
+                oocFlavorText = FormattedMessage.RemoveMarkup(OOCFlavorText);
+            }
+
             var appearance = HumanoidCharacterAppearance.EnsureValid(Appearance, Species, Sex);
 
             var prefsUnavailableMode = PreferenceUnavailable switch
@@ -595,6 +621,7 @@ namespace Content.Shared.Preferences
 
             Name = name;
             FlavorText = flavortext;
+            OOCFlavorText = oocFlavorText; // Nebulous
             Age = age;
             Sex = sex;
             Gender = gender;
@@ -665,6 +692,7 @@ namespace Content.Shared.Preferences
             hashCode.Add(_loadouts);
             hashCode.Add(Name);
             hashCode.Add(FlavorText);
+            hashCode.Add(OOCFlavorText); // Nebulous
             hashCode.Add(Species);
             hashCode.Add(Age);
             hashCode.Add((int)Sex);

@@ -51,6 +51,8 @@ namespace Content.Client.Lobby.UI
         private FlavorText.FlavorText? _flavorText;
         private TextEdit? _flavorTextEdit;
 
+        private TextEdit? _oocFlavorTextEdit;
+
         // One at a time.
         private LoadoutWindow? _loadoutWindow;
 
@@ -440,8 +442,9 @@ namespace Content.Client.Lobby.UI
                 TabContainer.AddChild(_flavorText);
                 TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-flavortext-tab"));
                 _flavorTextEdit = _flavorText.CFlavorTextInput;
-
+                _oocFlavorTextEdit = _flavorText.COOCFlavoTextInput; // Nebulous
                 _flavorText.OnFlavorTextChanged += OnFlavorTextChange;
+                _flavorText.OnOOCFlavorTextChanged += OnOOCFlavorTextChange; // Nebulous
             }
             else
             {
@@ -453,6 +456,9 @@ namespace Content.Client.Lobby.UI
                 _flavorText.Dispose();
                 _flavorTextEdit?.Dispose();
                 _flavorTextEdit = null;
+                _flavorText.OnOOCFlavorTextChanged -= OnOOCFlavorTextChange; // Nebulous
+                _oocFlavorTextEdit?.Dispose(); // Nebulous
+                _oocFlavorTextEdit = null; // Nebulous
                 _flavorText = null;
             }
         }
@@ -1019,6 +1025,17 @@ namespace Content.Client.Lobby.UI
             SetDirty();
         }
 
+        // Nebulous - Start of modified code
+        private void OnOOCFlavorTextChange(string content)
+        {
+            if (Profile is null)
+                return;
+
+            Profile = Profile.WithOOCFlavorText(content);
+            SetDirty();
+        }
+        // Nebulous - End of modified code
+
         private void OnMarkingChange(MarkingSet markings)
         {
             if (Profile is null)
@@ -1205,6 +1222,13 @@ namespace Content.Client.Lobby.UI
             {
                 _flavorTextEdit.TextRope = new Rope.Leaf(Profile?.FlavorText ?? "");
             }
+
+            // Nebulous - Start of modified code
+            if (_oocFlavorTextEdit != null)
+            {
+                _oocFlavorTextEdit.TextRope = new Rope.Leaf(Profile?.OOCFlavorText ?? "");
+            }
+            // Nebulous - End of modified code
         }
 
         private void UpdateAgeEdit()
