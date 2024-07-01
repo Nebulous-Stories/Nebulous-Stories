@@ -41,6 +41,7 @@ namespace Content.Shared.Examine
 
         public const float ExamineRange = 16f;
         protected const float ExamineDetailsRange = 3f;
+        protected const float ExamineDetailedDescriptionRange = 6f; // Nebulous Stories - Range for detailed descriptions
 
         protected const float ExamineBlurrinessMult = 2.5f;
 
@@ -68,6 +69,23 @@ namespace Content.Shared.Examine
                 return true;
 
             // is it inside of an open storage (e.g., an open backpack)?
+            return _interactionSystem.CanAccessViaStorage(examiner, entity);
+        }
+
+        public bool IsInDetailedDescriptionRange(EntityUid examiner, EntityUid entity) // Nebulous Stories - Separate detailed description range from regular detailed examine
+        {
+            if (IsClientSide(entity))
+                return true;
+
+            if (MobStateSystem.IsIncapacitated(examiner))
+                return false;
+
+            if (!InRangeUnOccluded(examiner, entity, ExamineDetailedDescriptionRange))
+                return false;
+
+            if (_containerSystem.IsInSameOrTransparentContainer(examiner, entity, userSeeInsideSelf: true))
+                return true;
+
             return _interactionSystem.CanAccessViaStorage(examiner, entity);
         }
 
@@ -306,6 +324,12 @@ namespace Content.Shared.Examine
         ///     Entity being examined, for broadcast event purposes.
         /// </summary>
         public EntityUid Examined { get; }
+
+        // Nebulous Stories - Separate detailed description range
+        /// <summary>
+        ///     Whether the examiner is in range of the entity to view the detailed character description.
+        /// </summary>
+        public bool IsInDetailedDescriptionRange { get; }
 
         private bool _hasDescription;
 
