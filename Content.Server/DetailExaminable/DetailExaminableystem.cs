@@ -16,29 +16,50 @@ namespace Content.Server.DetailExaminable
             SubscribeLocalEvent<DetailExaminableComponent, GetVerbsEvent<ExamineVerb>>(OnGetExamineVerbs);
         }
 
-        private void OnGetExamineVerbs(EntityUid uid, DetailExaminableComponent component, GetVerbsEvent<ExamineVerb> args)
+        private void OnGetExamineVerbs(EntityUid uid,
+            DetailExaminableComponent component,
+            GetVerbsEvent<ExamineVerb> args)
         {
             if (Identity.Name(args.Target, EntityManager) != MetaData(args.Target).EntityName)
                 return;
 
             var detailsRange = _examineSystem.IsInDetailedDescriptionRange(args.User, uid); // Nebulous Stories - Use the DetailedDescriptionRange
 
-            var verb = new ExamineVerb()
+            if (component.Content.Length != 0)
             {
-                Act = () =>
+                var verb = new ExamineVerb()
                 {
-                    var markup = new FormattedMessage();
-                    markup.AddMarkup(component.Content);
-                    _examineSystem.SendExamineTooltip(args.User, uid, markup, false, false);
-                },
-                Text = Loc.GetString("detail-examinable-verb-text"),
-                Category = VerbCategory.Examine,
-                Disabled = !detailsRange,
-                Message = detailsRange ? null : Loc.GetString("detail-examinable-verb-disabled"),
-                Icon = new SpriteSpecifier.Texture(new ("/Textures/Interface/VerbIcons/examine.svg.192dpi.png"))
-            };
+                    Act = () =>
+                    {
+                        var markup = new FormattedMessage();
+                        markup.AddMarkupPermissive(component.Content);
+                        _examineSystem.SendExamineTooltip(args.User, uid, markup, false, false);
+                    },
+                    Text = Loc.GetString("detail-examinable-verb-text"),
+                    Category = VerbCategory.Examine,
+                    Disabled = !detailsRange,
+                    Message = detailsRange ? null : Loc.GetString("detail-examinable-verb-disabled"),
+                    Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/examine.svg.192dpi.png"))
+                };
+                args.Verbs.Add(verb);
+            }
 
-            args.Verbs.Add(verb);
+            if (component.OOCContent.Length != 0)
+            {
+                var verb = new ExamineVerb()
+                {
+                    Act = () =>
+                    {
+                        var markup = new FormattedMessage();
+                        markup.AddMarkupPermissive(component.OOCContent);
+                        _examineSystem.SendExamineTooltip(args.User, uid, markup, false, false);
+                    },
+                    Text = Loc.GetString("ooc-detail-examinable-verb-text"),
+                    Category = VerbCategory.Examine,
+                    Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/examine.svg.192dpi.png"))
+                };
+                args.Verbs.Add(verb);
+            }
         }
     }
 }
