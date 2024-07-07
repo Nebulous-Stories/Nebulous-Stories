@@ -38,6 +38,7 @@
     skipChecks: true
   - type: Ghost
   - type: GhostHearing
+    canHearLocal: false # Nebulous - Get deaf lol
   - type: MovementSpeedModifier
     baseSprintSpeed: 12
     baseWalkSpeed: 8

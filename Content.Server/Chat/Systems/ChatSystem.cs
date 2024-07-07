@@ -826,6 +826,9 @@ public sealed partial class ChatSystem : SharedChatSystem
 
             var observer = ghostHearing.HasComponent(playerEntity);
 
+            if (observer && !Comp<GhostHearingComponent>(playerEntity).CanHearLocal) // Nebulous - All non-aghosts are completely deaf to local chat.
+                continue;
+
             // even if they are a ghost hearer, in some situations we still need the range
             if (sourceCoords.TryDistance(EntityManager, transformEntity.Coordinates, out var distance) && distance < voiceGetRange)
             {
