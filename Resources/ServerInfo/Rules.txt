@@ -1,113 +1,97 @@
-﻿[color=#ffff00]Mission Statement:
+﻿﻿[color=#ffff00]Mission Statement:
 
-Delta-V is a Medium Roleplay server. Try to immerse yourself into your character. This includes doing your job, interacting with your fellow crewmates, and using roleplay as the primary vessel to play the game. MRP places less emphasis on "winning" and more on just telling a story.[/color]
+Nebulous Stories exists to foster high quality roleplay in all capacities. Here, players may create characters that engage in collaborative roleplay and do cool things. These characters have few rules binding their freedom, bar that they do engage in quality roleplay. We support a community of players who share similar desires: to tell good stories over achieve mechanical wins. Above all else, we hold that respect is key. Due to the nature of HRP and this server, players are given the freedom to discuss mature and potentially sensitive topics. If you are uncomfortable with such content, we recommend that you do not play.[/color]
 
-[color=#ff0000]Server Disclaimers:[/color]
-You must be at least 17 years of age to play on Delta-V’s servers. Any users suspected of being under the age of 17 will be removed.
+[color=#ff0000]By connecting to Nebulous Stories you confirm you are 18 years old or older. If you are suspected of being under 18 you will be permanently removed.[/color]
 
-By connecting to this server, you agree to our privacy policy found at [color=#808080]https://go.delta-v.org/privacy[/color].
+The use of 3rd party applications to modify the game, or to attack server infrastructure, will be met with an appeal-only ban.
 
-Intentionally disconnecting, responding with hostility, or refusing to respond when an admin privately messages you in-game will be met with an appeal-only ban. Additionally, abusing the AHelp relay by flooding it with garbage, checking for admins before stating a problem (ex: "hello?", "any admins?"), using it as a chatroom, or sending messages of no substance will result in your removal. All AHelp messages are relayed to the Delta-V Discord.
+[color=#a4885c]1.0 Zero Tolerance Policies:[/color]
+Policies and rules that we provide no or extremely low amounts of leeway and tolerance for.
 
-The usage of any third-party applications/scripts/client modifications or any other applicable software to gain an advantage, avoid intended game/server mechanics, or to harm server infrastructure is strictly prohibited, as is the abuse of glitches, exploits and bugs. Any and all instances of this will be met with an appeal-only ban; please use the #bug-reports channel on the Discord to report any issues you find in-game.
+[color=#a4885c]1.1[/color] Admins reserve the right to disregard any and all rules should they deem it to be in the interest of the current round, server, or community.
+- Not all examples of rule breaks can be written, and all rules are up to individual staff interpretation.
+- Administrators will be held accountable should they utilize this privilege.
 
-If you have any questions about these rules, please use the admin help menu by hitting F1 in-game or clicking the "AHelp" button in the lobby, or by making a post in the "Rules Clarification" section of the forum.
+[color=#a4885c]1.2[/color] This is an English only server, you should be using it as your primary method of communication
+- You may add words or brief phases in another language, as long as it’s not used to communicate with another player in the same language.
 
-[color=#a4885c]Community Rules:[/color]
-[color=#a4885c]0.[/color] Admins can disregard any and all of these rules if they deem it in the best interest of the current round, server, and/or community at large.
- - Administrators will be held fully accountable for their actions if they exercise this privilege.
- - All of these rules apply as they are intended. Every example of a rule break cannot be defined as written, therefore, enforcement of the rules is subject to staff interpretation of the rule's intention.
- - Any extended discussion regarding interpretation of the rules should be avoided in the AHelp menu and can be instead pursued within the Delta-V Discord in the #help channel.
+[color=#a4885c]1.3[/color] Do not communicate in-round information to other people.
+- This includes discussing the current round in our Discord server, this includes even mundane comments such as “Hey I'm a chef, who wants to be a botanist?”
+- Exceptions do apply if you are asking for help, as long as you keep revealed information to a minimum.
+- Do not stream content from Nebulous Stories on Twitch, Youtube, or other social media sites.
 
-[color=#a4885c]E1.[/color] Erotic Roleplay (ERP), erotic content, or 18+ sexual content is [color=#ff0000]not allowed under any circumstance[/color]. This includes comments not explicitly sexual in nature that contain words, phrases, or ideations that are deemed inappropriate by staff or members. [color=#ff0000]If roleplay reaches a point where it has become sexual and/or uncomfortable, immediately stop and contact an administrator or moderator.[/color]
+[color=#a4885c]1.4[/color] No discrimination or bigotry.
+- Racism, sexism, homophobia, violence, threats, hate speech, slurs, and other forms of bigotry, discrimination, and harassment will result in an appeal only ban.
+- This includes denigration of other player characters through reference to their species/morphotype or by comparison to non sophonts.
 
-[color=#a4885c]E2.[/color] Delta-V is an English-based community; use English as your primary method of communication within the game and Delta-V servers.
- - Do not spam or advertise on our server.
- - Be respectful towards other members and avoid making others uncomfortable.
- - We have a zero tolerance policy for racism, sexism, homophobia, violence, threats, hate speech, slurs, and other forms of bigotry, discrimination, and harassment. Slurs and terms that use real or implied mental or physical disability to mock or denigrate members or their in-game characters are also strictly prohibited. Failure to comply with this rule will result in community removal.
- - The denigration of other player characters through reference to their species/morphotype or debasement by comparison to nonsophonts on a discriminatory basis is strictly prohibited and may result in an appeal-only ban.
+[color=#a4885c]1.5[/color] Respect others' consent choices.
+0 Players may use the OOC character descriptor as a method of showing consent for various mature topics, including ERP
+- If someone tells you to stop doing/discussing a topic via LOOC, [color=#ff0000]stop[/color]. And take your actions/discussions to a more private location, or even off-server.
 
-[color=#a4885c]E3.[/color] Delta-V welcomes content creators and streamers to our community, but we have a few rules regarding livestreaming game servers.
- - While a stream delay is not necessary, it is highly recommended to have at least a 10 second delay.
- - Please let admins know you are streaming via the AHelp prior to doing so.
- - If your chat or viewers are in-game with you while also watching your stream, they are breaking our server rules. Please do not coordinate with them and discourage this behavior if it is seen.
+[color=#a4885c]1.6[/color] Do not ignore, intentionally disconnect from, or react with hostility in the ahelp.
+- We do not tolerate any form of abuse towards our staff.
+- This also includes spamming the relay with unrelated messages or admin checking.
 
-[color=#a4885c]Game Server Rules:[/color]
+[color=#a4885c]1.7[/color] Do not abuse exploits or bugs.
+- If you discover a bug, you should instantly report it, and never intentionally use it.
+- Do not use external programs like autoclickers, macros, client cheats.
 
-[color=#a4885c]1.[/color] Follow the server expectations:
- - If you are banned from a role or department, you may not play that role. This includes seeking or accepting promotions into roles you are banned from.
- - Do not make yourself a major problem/annoyance/disruption for the crew while not being an antagonist (i.e. self-antagging). Intentionally hindering the station as a crew-aligned character is strictly against our rules.
- - Clowns, Mimes, and other "prankster" roles do not get an exemption from the above, and should not use their job as an excuse to be a major disturbance.
- - Department strikes (e.g. cargonia and any variation thereof), riots, cults, and any other type of similar largely disruptive behavior are strictly forbidden without both excellent roleplay justification and explicit administrator pre-approval.
- - AFK (a.k.a. SSD) and catatonic players are considered to have the same rights as any other crewmate.
-    - If a player is dead and catatonic (not SSD), they are not required to be revived and should be stored in the morgue. You should not biomass grind dead and catatonic crew unless in an emergency.
-    - If a player is alive and catatonic, they may be brought to their relevant department or cryostorage as necessary.
+[color=#a4885c]2.0 General Rules:[/color]
+General rules and common practice. The "bare-minimum" expectations that you should be following.
 
-[color=#a4885c]2.[/color] Follow metagaming guidelines:
- - Do not use the Emote channel to bypass an inability to speak. This includes examples like "I’m friendly," "oh weird I can’t speak," or "mimes a flashlight".
-    - Additionally, use of the emote channel to simulate character death rattles or other game mechanics is prohibited.
- - Use the local-out-of-character (LOOC) and global out-of-character (OOC) channels properly. Don’t speak of in-character matters in those channels unless you’re asking questions related to in-game concepts.
- - Do not use in-character channels to bypass a lack of ability to use OOC/LOOC chats (e.g. "Huh, wonder where the captain went? OOC He probably left to get dinner lol").
- - Do not engage in meta-communications (i.e. using external channels to communicate with other players in the same game).
-    - Do not stream, discuss, or share information about the current round to the Delta-V Discord.
- - You are allowed to have knowledge of past experiences and prior shifts, and players are allowed to have in-character relationships (friends, enemies, or otherwise). However, this cannot be used as a sole reason to grant or deny items/accesses/favors based exclusively on having a relationship with one another (i.e. meta-friending/meta-grudging).
-    - Antagonists in previous rounds must not be treated differently due to their prior antagonist status. Notwithstanding, confession of crimes committed in a prior shift are still admissible in court.
-    - Additionally, and for the sake of continuity, your character will never have permanently died in previous rounds.
- - Do not "antag roll." This is the act of joining rounds for the purpose of seeing if you have received an antagonist role, and leaving soon after if not.
 
-[color=#a4885c]3.[/color] Follow the new-life rules:
- - If a player dies and is brought back by way of cloning or borging, they forget the last five minutes leading up to their death and cannot describe who or what killed them.
- - Players that are revived by using a defibrillator can only recall vague details about their death, such as "Someone shot me" or "I was set ablaze" but they cannot recall details beyond that. [color=#ff0000]Please report players who break this rule.[/color]
- - In either case, characters do not have any knowledge of what happened while they were dead (i.e. ghosted/observing).
+[color=#a4885c]2.1[/color] Have in-round reason, rationale, and roleplay for your character's actions.
+- Clowns, mimes, and other traditionally "prankster" roles do not get an exception, and you should not use their job as an excuse to antagonize.
 
-[color=#a4885c]4.[/color] Follow naming conventions:
-In-character names must fit the server standards of:
- - Doesn't make obvious references,
- - Isn't an obvious pun or play on words,
- - Isn't obscene,
-   OR
- - Is a result of random name generation.
-The only exception to the above is theatrical roles such as the clown, boxer, and mime; these roles are allowed stage names with some freedom, as long as it is not obscene. Administrators reserve the right to approve or deny character names at their discretion.
+[color=#a4885c]2.2[/color] Do not meta-friend or meta-grudge.
+- You are allowed to have relationships with other characters based on your previous rounds (such as friends or enemies), but these cannot be used to grant or refuse items/services.
 
-[color=#a4885c]5.[/color] Follow roleplay guidelines:
- - Your character is a separate entity from you, the player. Your character's actions, feelings, and knowledge in-game should be based solely on the character's experiences rather than your own as the player.
- - Low roleplay actions that have no regard for your character or little bearing on setting (such as memes, silly copy paste spam IC) are not acceptable. Your character is a worker aboard a space station and will be held accountable.
- - Do not fax memes, copypasta, or spam to Central Command.
- - Do not escalate situations needlessly as a crew-aligned role. Very few things are deserving of a fight to the death.
-    - If a fight results in someone being critically injured, seek medical help for them - and if they die, do not destroy or otherwise hide their body. This falls under self-antagonistic behavior.
-    - Pest ghost roles such as mice are always fair game for attacking. Do not grief crew-aligned ghost roles such as familiars, drones, or pets without provocation.
-       - Some awakened pest roles (e.g. sentient mothroach) may be considered crew pets and fall under this rule.
- - [color=#ff0000]Non-security personnel should not seek to kill or detain unrelated threats.[/color] Crew may neutralize threats when they present themselves or if they are relevant to the crew member in question.
-    - Certain severe emergencies may make it reasonable for normal crew to defend themselves and their station, such as nuclear operatives, a zombie outbreak, space dragon attack, or other critical situation.
+[color=#a4885c]2.3[/color] Speak and act like a believable person.
+- You are playing a high-roleplay server; speak and act like a human being. You will be held to a higher standard of roleplay
+- Do not use text speech such as “omg”, “idk”, “wtf”, or “lol”.
+- Do not abuse emotes to bypass the inability to speak.
+- Do not respond to events in a highly unbelievable manner, stick to how your character would react.
 
-[color=#a4885c]6.[/color] Follow powergaming guidelines:
-Don't rush for or prepare equipment unrelated to your job for no purpose other than to have it "just in case" and without valid reason.
- - A medical doctor does not need insulated gloves, the Head of Personnel does not need a gun, and the Captain does not need an assault rifle. If you, in your given role, require an item that does not fall within your job’s usual parameters, have a valid reason to obtain and keep it.
-    - Manufacturing weapons, bombs, or deadly poisons before you know of any reason you would need them is self-antagonistic behavior.
- - Hiding Traitor objective items or preemptively securing them with higher security than usually required or than would make logical sense violates our powergaming and roleplay guidelines.
-    - Do not, [color=#ff0000]under any circumstances[/color], hide the nuclear fission explosive, authentication disk, or other sensitive items in an impossible to see/access location.
+[color=#a4885c]2.4[/color] As a non antagonist, do not commit major crimes without admin approval.
+- Minor crimes are allowed for non-antagonists with proper escalation and in-character reasoning.
+- Cults, department independence (such as Cargonia or Atmosia), or other widely disruptive behavior is strictly forbidden for non-antagonists. Antagonists may perform such actions with in-round reason and rationale, but should ahelp it first.
 
-[color=#a4885c]7.[/color] Follow end-of-round (EOR) rules:
- - Significant end-of-round grief (EORG) is not allowed. This includes attacking, destroying, polluting, and severely injuring without reason both at and on the way to Central Command.
-    - Explosives and strategies with capacity for high collateral damage should not be used on or around the evacuation shuttle after it arrives at the station.
+[color=#a4885c]2.5[/color] Keep your damage proportional to your objectives.
+- The damage that antagonists can cause should be roughly proportional to their objectives, and contribute towards achieving them in some way. If you are concerned as to whether or not what you're about to do is allowed, feel free to ahelp and ask an admin for clarification.
+- Antagonists should aim for creative, roleplay-driven interactions, rather than simple chaos and destruction.
+- Explosives and strategies with capacity for high collateral damage should not be used on or around the evacuation shuttle after it arrives at the station.
 
-[color=#a4885c]Command, Security, and Antagonist Rules:[/color]
-[color=#a4885c]C1.[/color] Follow Command and Security Guidelines:
- - Security and Command roles are held to a higher standard of roleplay, and are expected to know and perform their jobs to the best of their ability. These roles often heavily impact the round and require more careful and conscientious roleplay; if you cannot meet these requirements do not take these roles.
-    - Both departments are required to read and follow Delta-V Space Law, Standard Operating Procedure, Alert Procedure, and Company Policy to the best of their ability.
-    - Abandoning your role to go do whatever you want instead of managing your department or maintaining security, abusing your position or using it to make arbitrary or malicious choices to the detriment of the station, and being negligent to the point of harm is prohibited.
- - If you need to leave the round, please notify administrators via AHelp menu and notify your fellow crew via departmental radio. If you have the capability to do so, ensure that you return your items as necessary and seek cryostorage if you are not planning on returning.
- - Do not give up or trade away Traitor objective items, departmental/Command tools and remotes, and sensitive equipment without excellent reason.
-    - Some leeway is given to making deals with criminals [italic]if and only if[/italic] the deal benefits the safety or situation of the station or circumstances rather than just yourself (e.g. hostage situations).
-    - Some leeway can be given in extreme circumstances of extreme shortstaffing and/or emergency/crisis.
- - Both Command and Security are expected to uphold the law and maintain order aboard the station. Do not engage in lawbreaking activity or troublemaker behavior, and ensure that company policy and standard operating procedure - not just space law - is being observed. Security is expected to intervene into criminal activity where possible and safe to do so. Heads of departments are at minimum expected to report criminal activity to Security and should cooperate with law enforcement where possible.
- - Do not hire random crew to be your bodyguard(s) or promote random crewmembers to Command positions at random. If you require bodyguards or security details, talk to your Security department. If you need new Command staff, talk to the personnel in that related department.
+[color=#a4885c]3.0 Roleplay Guidelines:[/color]
+Expectations and policies centered around roleplay.
 
-[color=#a4885c]C2.[/color] By picking the prisoner role, you have chosen to roleplay as a prisoner. You are still subject to the same rules regarding escalation, and should only seek to escape from the brig with excellent reasoning (e.g. abusive security personnel or badly damaged permanent brig). Escaping for no reason is considered a self-antagonistic activity. If you are unsure whether your escape reason is valid, feel free to AHelp it first. [color=#ff0000]Lack of administrator response does not constitute approval.[/color]
+[color=#a4885c]3.1[/color] Your character is a separate entity from you, the player.
+- Your character is a distinct entity with their own motivations, beliefs, and experiences, separate from your personal views and knowledge. Your actions should come solely from in-character reasoning.
 
-[color=#a4885c]C3.[/color] Follow antagonist guidelines:
- - The damage that antagonists can cause should be roughly proportional to their objectives, and contribute towards achieving them in some way. If you are concerned as to whether or not what you're about to do is allowed, feel free to AHelp and ask an admin for clarification. [color=#ff0000]Lack of administrator response does not constitute approval.[/color]
-    - Antagonists exist not only as a role for your character but also as a game mechanic. Seek to push forward the round through your antagonistic actions, rather than grind it to halt in pursuit of your objectives.
- - Other antagonists are not necessarily your friends. Other agents, mercenaries, and possibly even space dragons are free agents that you may negotiate with at your own risk, but no one should be working together with xenomorphs or zombies.
- - Heavily damaging/spacing or camping arrivals/evac/cryo, unnecessarily extending the round, and behavior that calls the round to an end prematurely - as well as other lame behaviors - are strictly forbidden for all antags except for station-destroying antags, such as nuclear operatives or space dragons.
- - As a non- or partially-sentient antagonist, you are expected to have only a limited understanding of space stations and their mechanics. Slimes, zombies, and spiders should [color=#ff0000]not[/color] be targeting the gravity generator or the AME, nor should they be unnecessarily spacing the station.
+[color=#a4885c]3.2[/color] Do not intentionally prepare items "just in case".
+- Do not prepare items in case a certain scenario happens. You should not expect danger or antagonists to show up, and thus should not prepare for it. Your character does not have knowledge about antagonists or their objectives.
+- The alert procedure defines how areas should be locked down, based on the alert level. Do not bolt your office or maintenance airlocks without a proper reason.
+
+[color=#a4885c]3.3[/color] Do not overcrowd departmental RP situations.
+- If security is dealing with a situation, be respectful of their operations, do not needlessly intervene. You should only be stepping in if you're taking the full side of the suspect and intend to act as an accomplice.
+- Do not follow a patient/involved person into a location such as the medical bay unless you have good reason to, for example you having information on their condition that you are going to give or an officer making an arrest.
+- Do not barge into situations you do not belong in and force yourself into it. Treat it like a real security or medical emergency; discuss things on the sides quietly, but do not intervene.
+
+[color=#a4885c]3.4[/color] Do not seek out to kill or detain unrelated threats.
+- Crew may handle threats if they present themselves, but they should be handled by security otherwise.
+- Station-wide emergencies like nuclear operatives, space dragons, or zombies, are an exception to this rule.
+
+[color=#a4885c]3.5[/color] Follow the new life rule.
+- If a player dies and is brought back by way of cloning or borging, they forget the last five minutes leading up to their death and cannot describe who or what killed them.
+- Players that are revived by using a defibrillator can only recall vague details about their death, such as "Someone shot me" or "I was set ablaze" but they cannot recall details beyond that.
+
+[color=#a4885c]3.6[/color] Stay within your job, reasonable knowledge, and abilities.
+- Do not use knowledge that you have learned out-of-character while you are in-character.
+- Unless your character has a past in a particular line of work, they should not know how to do jobs outside of their own.
+- Do not do the jobs of other people for them, only play the role you signed up for. If you want to work a different job, ask the Head of Personnel for a job change. Exceptions can be made for if no active staff exist for a department.
+- Characters may change jobs from time to time, but not from shift to shift.
+
+[color=#a4885c]3.7[/color] Command and security are expected to be competent and lawful.
+- Neither roles should be grossly incompetent at their job or in their judgment.
+- You should know the Standard Operating Procedure, Space Law, Company Policy and Alert procedure, and follow it to the best of your ability.
+- You should not knowingly break the law as either command or security.
