@@ -26,4 +26,11 @@
   id: 4
   time: '2024-06-20T20:43:19.0000000+00:00'
   url: https://github.com/Nebulous-Stories/Nebulous-Stories/pull/6
+- author: NullWanderer
+  changes:
+  - message: Ghosts are no longer able to hear proximity based chat
+    type: Remove
+  id: 5
+  time: '2024-07-07T21:06:41.0000000+00:00'
+  url: https://github.com/Nebulous-Stories/Nebulous-Stories/pull/8
 Order: 1
