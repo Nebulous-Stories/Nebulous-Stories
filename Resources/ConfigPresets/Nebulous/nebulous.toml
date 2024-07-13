@@ -52,3 +52,6 @@ flavor_text = true
 
 [shuttle]
 emergency_early_launch_allowed = true
+
+[whitelist]
+enabled = true
