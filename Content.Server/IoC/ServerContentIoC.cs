@@ -1,3 +1,4 @@
+using Content.Server._NS.Consent.Managers;
 using Content.Server.Administration;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
@@ -63,6 +64,7 @@ namespace Content.Server.IoC
             IoCManager.Register<ISharedPlaytimeManager, PlayTimeTrackingManager>();
             IoCManager.Register<ServerApi>();
             IoCManager.Register<JobWhitelistManager>();
+            IoCManager.Register<IServerConsentManager, ServerConsentManager>(); // Nebulous - Consent System
         }
     }
 }

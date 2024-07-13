@@ -91,6 +91,7 @@ public enum LogType
     Tile = 86,
     BagOfHolding = 420, //Nyano - Summary: adds bag of holding.
     Psionics = 421, //Nyano - Summary: ads psionic as a log type.
+    Consent = 442, // NS - Consent system
 
     /// <summary>
     /// A client has sent too many chat messages recently and is temporarily blocked from sending more.

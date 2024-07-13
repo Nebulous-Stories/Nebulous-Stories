@@ -1,3 +1,4 @@
+using Content.Server._NS.Consent.Managers;
 using Content.Server.Acz;
 using Content.Server.Administration;
 using Content.Server.Administration.Logs;
@@ -104,6 +105,8 @@ namespace Content.Server.Entry
                 IoCManager.Resolve<GhostKickManager>().Initialize();
                 IoCManager.Resolve<ServerInfoManager>().Initialize();
                 IoCManager.Resolve<ServerApi>().Initialize();
+
+                IoCManager.Resolve<IServerConsentManager>().Initialize(); // Nebulous - Consent System
 
                 _voteManager.Initialize();
                 _updateManager.Initialize();

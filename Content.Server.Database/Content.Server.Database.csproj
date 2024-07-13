@@ -28,5 +28,10 @@
     <ProjectReference Include="..\Content.Shared.Database\Content.Shared.Database.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Migrations\Postgres\20240712231448_ConsentSystem.cs" />
+    <Compile Remove="Migrations\Postgres\20240712231448_ConsentSystem.Designer.cs" />
+  </ItemGroup>
+
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
 </Project>
