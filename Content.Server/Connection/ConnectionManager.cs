@@ -215,8 +215,7 @@ namespace Content.Server.Connection
                 return (ConnectionDenyReason.Full, Loc.GetString("soft-player-cap-full"), null);
             }
 
-            // DeltaV - Replace existing softwhitelist implementation
-            if (false)// _cfg.GetCVar(CCVars.WhitelistEnabled))
+            if (_cfg.GetCVar(CCVars.WhitelistEnabled))
             {
                 var min = _cfg.GetCVar(CCVars.WhitelistMinPlayers);
                 var max = _cfg.GetCVar(CCVars.WhitelistMaxPlayers);
@@ -229,28 +228,6 @@ namespace Content.Server.Connection
                     // was the whitelist playercount changed?
                     if (min > 0 || max < int.MaxValue)
                         msg += "\n" + Loc.GetString("whitelist-playercount-invalid", ("min", min), ("max", max));
-                    return (ConnectionDenyReason.Whitelist, msg, null);
-                }
-            }
-
-            // DeltaV - Soft whitelist improvements
-            if (_cfg.GetCVar(CCVars.WhitelistEnabled))
-            {
-                var connectedPlayers = _plyMgr.PlayerCount;
-                var connectedWhitelist = _connectedWhitelistedPlayers.Count;
-
-                var slots = _cfg.GetCVar(CCVars.WhitelistMinPlayers);
-
-                var noSlotsOpen = slots > 0 && slots < connectedPlayers - connectedWhitelist;
-
-                if (noSlotsOpen && await _db.GetWhitelistStatusAsync(userId) == false
-                                     && adminData is null)
-                {
-                    var msg = Loc.GetString(_cfg.GetCVar(CCVars.WhitelistReason));
-
-                    if (slots > 0)
-                        msg += "\n" + Loc.GetString("whitelist-playercount-invalid", ("min", slots), ("max", _cfg.GetCVar(CCVars.SoftMaxPlayers)));
-
                     return (ConnectionDenyReason.Whitelist, msg, null);
                 }
             }
