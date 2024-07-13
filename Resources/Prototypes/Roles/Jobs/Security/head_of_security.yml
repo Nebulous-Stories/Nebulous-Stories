@@ -5,7 +5,7 @@
   playTimeTracker: JobHeadOfSecurity
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 21600 # Nebulous - 6 hours
+      time: 3600 # Nebulous - 1 hours
   weight: 10
   startingGear: HoSGear
   icon: "JobIconHeadOfSecurity"
