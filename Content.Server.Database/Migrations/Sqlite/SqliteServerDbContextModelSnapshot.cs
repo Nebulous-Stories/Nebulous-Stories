@@ -757,11 +757,6 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("jsonb")
                         .HasColumnName("markings");
 
-                    b.Property<string>("OOCFlavorText")
-                        .IsRequired()
-                        .HasColumnType("TEXT")
-                        .HasColumnName("oocflavor_text");
-
                     b.Property<int>("PreferenceId")
                         .HasColumnType("INTEGER")
                         .HasColumnName("preference_id");

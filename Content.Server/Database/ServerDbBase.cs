@@ -240,7 +240,6 @@ namespace Content.Server.Database
             return new HumanoidCharacterProfile(
                 profile.CharacterName,
                 profile.FlavorText,
-                profile.OOCFlavorText, // Nebulous
                 profile.Species,
                 profile.Age,
                 sex,
@@ -277,7 +276,6 @@ namespace Content.Server.Database
 
             profile.CharacterName = humanoid.Name;
             profile.FlavorText = humanoid.FlavorText;
-            profile.OOCFlavorText = humanoid.OOCFlavorText; // Nebulous
             profile.Species = humanoid.Species;
             profile.Age = humanoid.Age;
             profile.Sex = humanoid.Sex.ToString();

@@ -1,3 +1,1 @@
 flavor-text-placeholder = An outer description of your character that others can get by looking at them...
-
-ooc-flavor-text-placeholder = Write anything about your character that should be obvious to all other players. This is OOC information and may include information like "what activities you consent to participate in"

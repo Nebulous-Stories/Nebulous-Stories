@@ -806,11 +806,6 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("jsonb")
                         .HasColumnName("markings");
 
-                    b.Property<string>("OOCFlavorText")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("oocflavor_text");
-
                     b.Property<int>("PreferenceId")
                         .HasColumnType("integer")
                         .HasColumnName("preference_id");

@@ -220,8 +220,6 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
             {
                 AddComp<DetailExaminableComponent>(entity.Value).Content = profile.FlavorText;
             }
-            if (profile.OOCFlavorText != "" && _configurationManager.GetCVar(CCVars.FlavorText)) // Nebulous
-                EnsureComp<DetailExaminableComponent>(entity.Value).OOCContent = profile.OOCFlavorText;
         }
 
         DoJobSpecials(job, entity.Value);
