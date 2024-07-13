@@ -3,10 +3,7 @@
     [RegisterComponent]
     public sealed partial class DetailExaminableComponent : Component
     {
-        [DataField] // Nebulous - Removed some extra data
+        [DataField("content", required: true)] [ViewVariables(VVAccess.ReadWrite)]
         public string Content = "";
-
-        [DataField] // Nebulous
-        public string OOCContent = "";
     }
 }

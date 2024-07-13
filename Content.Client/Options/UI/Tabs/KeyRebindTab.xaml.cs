@@ -226,6 +226,7 @@ namespace Content.Client.Options.UI.Tabs
             AddButton(EngineKeyFunctions.WindowCloseRecent);
             AddButton(EngineKeyFunctions.EscapeMenu);
             AddButton(ContentKeyFunctions.EscapeContext);
+            AddButton(ContentKeyFunctions.OpenConsentWindow); // Nebulous - Consent Button
 
             AddHeader("ui-options-header-misc");
             AddButton(ContentKeyFunctions.TakeScreenshot);

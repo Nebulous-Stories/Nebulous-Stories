@@ -1,3 +1,4 @@
+using Content.Client._NS.Consent.Managers;
 using Content.Client.Administration.Managers;
 using Content.Client.Changelog;
 using Content.Client.Chat.Managers;
@@ -71,6 +72,8 @@ namespace Content.Client.Entry
         [Dependency] private readonly IReplayLoadManager _replayLoad = default!;
         [Dependency] private readonly ILogManager _logManager = default!;
         [Dependency] private readonly ContentReplayPlaybackManager _replayMan = default!;
+
+        [Dependency] private readonly IClientConsentManager _clientConsentManager = default!; // Nebulous - Consent system
 
         public override void Init()
         {
@@ -161,6 +164,8 @@ namespace Content.Client.Entry
             _userInterfaceManager.SetDefaultTheme("SS14DefaultTheme");
             _userInterfaceManager.SetActiveTheme(_configManager.GetCVar(CVars.InterfaceTheme));
             _documentParsingManager.Initialize();
+
+            _clientConsentManager.Initialize(); // Nebulous - Consent system
 
             _baseClient.RunLevelChanged += (_, args) =>
             {
