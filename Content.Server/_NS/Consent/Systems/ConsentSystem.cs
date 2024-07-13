@@ -18,7 +18,7 @@ public sealed class ConsentSystem : SharedConsentSystem
     {
         var text = Loc.GetString("consent-examine-not-set");
 
-        if (_consent.TryGetPlayerConsentSettings(userId, out var consent))
+        if (_consent.TryGetPlayerConsentSettings(userId, out var consent) && consent.Freetext.Length > 0)
         {
             text = consent.Freetext;
         }
