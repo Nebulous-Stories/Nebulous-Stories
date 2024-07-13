@@ -1,4 +1,6 @@
+using Content.Shared.Administration.Managers;
 using Content.Shared.Examine;
+using Content.Shared.Ghost;
 using Content.Shared.Mind;
 using Content.Shared.Mind.Components;
 using Content.Shared.Verbs;
@@ -11,6 +13,7 @@ public abstract partial class SharedConsentSystem : EntitySystem
 {
     [Dependency] private readonly SharedMindSystem _mindSystem = default!;
     [Dependency] private readonly ExamineSystemShared _examineSystem = default!;
+    [Dependency] private readonly ISharedAdminManager _adminManager = default!;
 
     public override void Initialize()
     {
@@ -25,6 +28,10 @@ public abstract partial class SharedConsentSystem : EntitySystem
         {
             return;
         }
+
+        // Ghost check, get fucked lol. You know who you are
+        if (HasComp<GhostComponent>(args.User) && !_adminManager.IsAdmin(args.User, true))
+            return;
 
         args.Verbs.Add(new()
         {
