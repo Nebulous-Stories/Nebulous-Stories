@@ -54,4 +54,15 @@
   id: 8
   time: '2024-07-13T01:58:44.0000000+00:00'
   url: https://github.com/Nebulous-Stories/Nebulous-Stories/pull/13
+- author: NullWanderer
+  changes:
+  - message: Engineering now only requires 1 hour of overall playtime for any role
+    type: Tweak
+  - message: Command now only requires 6 hours of overall playtime for any role
+    type: Tweak
+  - message: Removed herobrine
+    type: Remove
+  id: 9
+  time: '2024-07-13T02:35:37.0000000+00:00'
+  url: https://github.com/Nebulous-Stories/Nebulous-Stories/pull/14
 Order: 1
