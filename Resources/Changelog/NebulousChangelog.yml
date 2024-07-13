@@ -73,4 +73,14 @@
   id: 10
   time: '2024-07-13T17:00:23.0000000+00:00'
   url: https://github.com/Nebulous-Stories/Nebulous-Stories/pull/15
+- author: NullWanderer
+  changes:
+  - message: You now require whitelist to join
+    type: Add
+  - message: Fixed whitelist-to-join not properly working and always allowing 1 unwhitelisted
+      person to join
+    type: Fix
+  id: 11
+  time: '2024-07-13T17:05:29.0000000+00:00'
+  url: https://github.com/Nebulous-Stories/Nebulous-Stories/pull/16
 Order: 1
