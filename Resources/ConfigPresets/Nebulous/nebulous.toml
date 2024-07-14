@@ -55,3 +55,6 @@ emergency_early_launch_allowed = true
 
 [whitelist]
 enabled = true
+
+[ooc]
+enable_during_round = true
