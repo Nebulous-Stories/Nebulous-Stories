@@ -90,4 +90,12 @@
   id: 12
   time: '2024-07-14T01:01:39.0000000+00:00'
   url: https://github.com/Nebulous-Stories/Nebulous-Stories/pull/17
+- author: NullWanderer
+  changes:
+  - message: Added subtle emotes and whisper LOOC, both with a maximum range of 2
+      tiles
+    type: Add
+  id: 13
+  time: '2024-07-14T18:42:57.0000000+00:00'
+  url: https://github.com/Nebulous-Stories/Nebulous-Stories/pull/19
 Order: 1
