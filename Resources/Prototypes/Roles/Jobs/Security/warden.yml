@@ -5,7 +5,7 @@
   playTimeTracker: JobWarden
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 21600 # Nebulous - 6 hours
+      time: 3600 # Nebulous - 1 hours
   startingGear: WardenGear
   icon: "JobIconWarden"
   supervisors: job-supervisors-hos
