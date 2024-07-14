@@ -35,6 +35,10 @@ namespace Content.Client.Chat.Managers
                     _consoleHost.ExecuteCommand($"looc \"{CommandParsing.Escape(str)}\"");
                     break;
 
+                case ChatSelectChannel.WhisperLooc: // Nebulous
+                    _consoleHost.ExecuteCommand($"wlooc \"{CommandParsing.Escape(str)}\"");
+                    break;
+
                 case ChatSelectChannel.OOC:
                     _consoleHost.ExecuteCommand($"ooc \"{CommandParsing.Escape(str)}\"");
                     break;
@@ -45,6 +49,10 @@ namespace Content.Client.Chat.Managers
 
                 case ChatSelectChannel.Emotes:
                     _consoleHost.ExecuteCommand($"me \"{CommandParsing.Escape(str)}\"");
+                    break;
+
+                case ChatSelectChannel.Subtle: // Nebulous
+                    _consoleHost.ExecuteCommand($"subtle \"{CommandParsing.Escape(str)}\"");
                     break;
 
                 case ChatSelectChannel.Dead:
@@ -76,7 +84,7 @@ namespace Content.Client.Chat.Managers
                     throw new ArgumentOutOfRangeException(nameof(channel), channel, null);
             }
         }
-        //Nyano - Summary: fires off the update permissions script. 
+        //Nyano - Summary: fires off the update permissions script.
         public void UpdatePermissions()
         {
             PermissionsUpdated?.Invoke();

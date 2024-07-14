@@ -263,6 +263,9 @@ public sealed partial class ChatSystem : SharedChatSystem
             case InGameICChatType.Emote:
                 SendEntityEmote(source, message, range, nameOverride, hideLog: hideLog, ignoreActionBlocker: ignoreActionBlocker);
                 break;
+            case InGameICChatType.Subtle: // Nebulous
+                SendEntitySubtle(source, message, range, nameOverride, hideLog: hideLog, ignoreActionBlocker: ignoreActionBlocker);
+                break;
             //Nyano - Summary: case adds the telepathic chat sending ability.
             case InGameICChatType.Telepathic:
                 _nyanoChatSystem.SendTelepathicChat(source, message, range == ChatTransmitRange.HideChat);
@@ -313,6 +316,9 @@ public sealed partial class ChatSystem : SharedChatSystem
                 break;
             case InGameOOCChatType.Looc:
                 SendLOOC(source, player, message, hideChat);
+                break;
+            case InGameOOCChatType.WhisperLooc:
+                SendWhisperLOOC(source, player, message, hideChat);
                 break;
         }
     }
@@ -963,6 +969,7 @@ public enum InGameICChatType : byte
     Speak,
     Emote,
     Whisper,
+    Subtle, // Nebulous
     Telepathic //Nyano - Summary: adds telepathic as a type of message users can receive.
 }
 
@@ -972,6 +979,7 @@ public enum InGameICChatType : byte
 public enum InGameOOCChatType : byte
 {
     Looc,
+    WhisperLooc, // Nebulous
     Dead
 }
 
