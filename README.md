@@ -8,7 +8,7 @@ Space Station 14 is a remake of SS13 that runs on [Robust Toolbox](https://githu
 ## Links
 
 #### Nebulous Stories
-[Discord](https://discord.gg/kPrazvaXmd)
+[Discord](https://go.nebulousstories.org/discord)
 
 #### DeltaV
 [Website](https://delta-v.org/) | [Wiki](https://wiki.delta-v.org/view/Main_Page) | [Discord](https://go.delta-v.org/AtDxv)
