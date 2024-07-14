@@ -83,4 +83,11 @@
   id: 11
   time: '2024-07-13T17:05:29.0000000+00:00'
   url: https://github.com/Nebulous-Stories/Nebulous-Stories/pull/16
+- author: DLondon
+  changes:
+  - message: Role timers have been adjusted
+    type: Tweak
+  id: 12
+  time: '2024-07-14T01:01:39.0000000+00:00'
+  url: https://github.com/Nebulous-Stories/Nebulous-Stories/pull/17
 Order: 1
