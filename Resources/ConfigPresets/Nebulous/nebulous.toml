@@ -7,10 +7,10 @@ round_end_pacifist = true
 soft_max_players   = 80
 
 [infolinks]
-discord    = "https://discord.gg/kPrazvaXmd"
+discord    = "https://go.nebulousstories.org/discord"
 github     = "https://github.com/Nebulous-Stories/Nebulous-Stories"
 bug_report = "https://github.com/Nebulous-Stories/Nebulous-Stories/issues/new/choose"
-appeal     = "https://discord.gg/kPrazvaXmd"
+appeal     = "https://go.nebulousstories.org/discord"
 #website    = ""
 #wiki       = ""
 #patreon    = ""
