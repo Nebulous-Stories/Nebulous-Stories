@@ -98,4 +98,11 @@
   id: 13
   time: '2024-07-14T18:42:57.0000000+00:00'
   url: https://github.com/Nebulous-Stories/Nebulous-Stories/pull/19
+- author: NullWanderer
+  changes:
+  - message: OOC chat is now enabled during rounds! Please don't abuse this.
+    type: Tweak
+  id: 14
+  time: '2024-07-15T21:11:46.0000000+00:00'
+  url: https://github.com/Nebulous-Stories/Nebulous-Stories/pull/20
 Order: 1
