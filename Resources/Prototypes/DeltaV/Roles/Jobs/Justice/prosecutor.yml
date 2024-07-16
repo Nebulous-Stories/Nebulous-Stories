@@ -4,8 +4,8 @@
   description: job-description-prosecutor
   playTimeTracker: JobProsecutor
   requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 3600 # Nebulous - 1 hour
+    - !type:OverallPlaytimeRequirement
+      time: 7200 # NS - 2 hrs
   startingGear: ProsecutorGear
   icon: "JobIconProsecutor"
   supervisors: job-supervisors-cj

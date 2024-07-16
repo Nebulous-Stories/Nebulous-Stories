@@ -4,8 +4,8 @@
   description: job-description-brigmedic
   playTimeTracker: JobBrigmedic
   requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 3600 # Nebulous - 1 hour
+      - !type:OverallPlaytimeRequirement # NS - Add overall playtime requirement
+        time: 7200 # NS - 2 hours
   startingGear: CorpsmanGear
   icon: "JobIconBrigmedic"
   supervisors: job-supervisors-hos

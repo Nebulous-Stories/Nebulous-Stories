@@ -5,7 +5,7 @@
   playTimeTracker: JobChiefEngineer
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 21600 # Nebulous - 6 hours
+      time: 14400 # Nebulous - 4 hours
   weight: 10
   startingGear: ChiefEngineerGear
   icon: "JobIconChiefEngineer"

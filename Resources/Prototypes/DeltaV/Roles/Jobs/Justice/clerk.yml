@@ -5,8 +5,8 @@
   playTimeTracker: JobClerk
   antagAdvantage: 2 # DeltaV - Reduced TC: Security Radio and Access
   requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 3600 # Nebulous - 1 hour
+    - !type:OverallPlaytimeRequirement
+      time: 7200 # NS - 2 hrs
   startingGear: ClerkGear
   icon: "JobIconClerk"
   requireAdminNotify: true

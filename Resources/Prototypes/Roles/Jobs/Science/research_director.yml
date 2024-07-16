@@ -6,7 +6,7 @@
   antagAdvantage: 6 # DeltaV - Reduced TC: Head of Staff
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 3600 # Nebulous - 1 hours
+      time: 14400 # NS - 4 hours
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"
