@@ -5,9 +5,8 @@
   objective: roles-antag-fugitive-objective
   # keep these in sync with the spawner
   requirements:
-  - !type:DepartmentTimeRequirement
-    department: Security
-    time: 3600 # 1 hour
+    - !type:OverallPlaytimeRequirement # NS - Add overall playtime requirement
+      time: 7200 # NS - 2 hours
 
 - type: startingGear
   id: FugitiveGear

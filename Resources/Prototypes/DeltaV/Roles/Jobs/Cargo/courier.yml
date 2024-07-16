@@ -5,8 +5,8 @@
   startingGear: CourierGear
   playTimeTracker: JobCourier
   requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 3600 # 1 hr
+  # - !type:OverallPlaytimeRequirement # NS - No playtime requirement
+  #   time: 3600 # 1 hr
   icon: "JobIconCourier"
   supervisors: job-supervisors-qm
   access:

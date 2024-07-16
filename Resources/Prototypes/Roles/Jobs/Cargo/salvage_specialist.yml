@@ -5,9 +5,8 @@
   playTimeTracker: JobSalvageSpecialist
   antagAdvantage: 8 # DeltaV - Reduced TC: External Access + Free hardsuit and weapons
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Logistics # DeltaV - Logistics Department replacing Cargo
-      time: 3600 # Nebulous - 1 hour
+   - !type:OverallPlaytimeRequirement #DeltaV
+     time: 7200 # NS - 2 hrs
   icon: "JobIconShaftMiner"
   startingGear: SalvageSpecialistGear
   supervisors: job-supervisors-qm

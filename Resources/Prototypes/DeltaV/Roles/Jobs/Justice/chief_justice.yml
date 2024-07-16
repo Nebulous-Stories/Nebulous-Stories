@@ -4,8 +4,8 @@
   description: job-description-chief-justice
   playTimeTracker: JobChiefJustice
   requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 21600 # Nebulous - 6 hours
+    - !type:OverallPlaytimeRequirement
+      time: 14400 # NS - 4 hours
   weight: 20
   startingGear: CJGear
   icon: "JobIconChiefJustice"

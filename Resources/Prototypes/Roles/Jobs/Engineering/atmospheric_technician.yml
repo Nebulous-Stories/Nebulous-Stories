@@ -5,8 +5,8 @@
   playTimeTracker: JobAtmosphericTechnician
   antagAdvantage: 4 # DeltaV - Reduced TC: External Access + Fireaxe + Free Hardsuit
   requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 3600 # Nebulous - 1 hour
+      - !type:OverallPlaytimeRequirement # NS - Add overall playtime requirement
+        time: 7200 # NS - 2 hours
   startingGear: AtmosphericTechnicianGear
   icon: "JobIconAtmosphericTechnician"
   supervisors: job-supervisors-ce

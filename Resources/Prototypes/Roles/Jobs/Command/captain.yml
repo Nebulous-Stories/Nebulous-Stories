@@ -4,9 +4,8 @@
   description: job-description-captain
   playTimeTracker: JobCaptain
   requirements:
-    - !type:OverallPlaytimeRequirement # DeltaV - Playtime requirement
-      time: 120 # 2 Hours
-    - !type:WhitelistRequirement # DeltaV - Whitelist requirement
+      - !type:OverallPlaytimeRequirement # NS - Add overall playtime requirement
+        time: 14400 # NS - 4 hours
   weight: 20
   startingGear: CaptainGear
   icon: "JobIconCaptain"

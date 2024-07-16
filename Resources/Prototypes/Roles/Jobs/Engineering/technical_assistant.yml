@@ -4,9 +4,6 @@
   description: job-description-technical-assistant
   playTimeTracker: JobTechnicalAssistant
   antagAdvantage: 3 # DeltaV - Reduced TC: External Access + Engineering
-  requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 3600 # Nebulous - 1 hour
   startingGear: TechnicalAssistantGear
   icon: "JobIconTechnicalAssistant"
   supervisors: job-supervisors-engineering

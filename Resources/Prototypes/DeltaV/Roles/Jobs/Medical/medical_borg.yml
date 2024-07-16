@@ -5,8 +5,8 @@
   description: job-description-medical-borg
   playTimeTracker: JobMedicalBorg
   requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 21600 # Nebulous - 6 hours
+    - !type:OverallPlaytimeRequirement
+      time: 7200 # NS - 2 hrs
   canBeAntag: false
   icon: JobIconMedicalBorg
   supervisors: job-supervisors-cmo
