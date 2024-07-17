@@ -1,6 +1,8 @@
 using System.IO;
 using System.Linq;
 using System.Numerics;
+using Content.Client._NS.Consent.Managers;
+using Content.Client._NS.Consent.UI;
 using Content.Client.Guidebook;
 using Content.Client.Humanoid;
 using Content.Client.Lobby.UI.Loadouts;
@@ -9,6 +11,7 @@ using Content.Client.Message;
 using Content.Client.Players.PlayTimeTracking;
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Systems.Guidebook;
+using Content.Shared._NS.Consent;
 using Content.Shared.CCVar;
 using Content.Shared.Clothing;
 using Content.Shared.GameTicking;
@@ -44,12 +47,15 @@ namespace Content.Client.Lobby.UI
         private readonly IFileDialogManager _dialogManager;
         private readonly IPlayerManager _playerManager;
         private readonly IPrototypeManager _prototypeManager;
+        private readonly IClientConsentManager _consentManager; // Nebulous: Consent management system
         private readonly MarkingManager _markingManager;
         private readonly JobRequirementsManager _requirements;
         private readonly LobbyUIController _controller;
 
         private FlavorText.FlavorText? _flavorText;
         private TextEdit? _flavorTextEdit;
+        private ConsentEditor? _consentEditor;
+        private TextEdit? _consentTextEdit;
 
         // One at a time.
         private LoadoutWindow? _loadoutWindow;
@@ -80,6 +86,7 @@ namespace Content.Client.Lobby.UI
         /// The work in progress profile being edited.
         /// </summary>
         public HumanoidCharacterProfile? Profile;
+        public string? ConsentText; // Nebulous: Current consent text
 
         private List<SpeciesPrototype> _species = new();
 
@@ -107,7 +114,8 @@ namespace Content.Client.Lobby.UI
             IPlayerManager playerManager,
             IPrototypeManager prototypeManager,
             JobRequirementsManager requirements,
-            MarkingManager markings)
+            MarkingManager markings,
+            IClientConsentManager consentManager)
         {
             RobustXamlLoader.Load(this);
             _sawmill = logManager.GetSawmill("profile.editor");
@@ -119,6 +127,7 @@ namespace Content.Client.Lobby.UI
             _markingManager = markings;
             _preferencesManager = preferencesManager;
             _requirements = requirements;
+            _consentManager = consentManager; // Nebulous
             _controller = UserInterfaceManager.GetUIController<LobbyUIController>();
 
             ImportButton.OnPressed += args =>
@@ -397,6 +406,11 @@ namespace Content.Client.Lobby.UI
 
             RefreshFlavorText();
 
+            // Nebulous
+            RefreshConsentMenu();
+            UpdateConsentTextEdit();
+            _consentManager.OnServerDataLoaded += UpdateConsentTextEdit;
+
             #region Dummy
 
             SpriteRotateLeft.OnPressed += _ =>
@@ -455,6 +469,22 @@ namespace Content.Client.Lobby.UI
                 _flavorTextEdit = null;
                 _flavorText = null;
             }
+        }
+
+        /// <summary>
+        /// Nebulous: Refreshes the consent text editor status.
+        /// </summary>
+        public void RefreshConsentMenu()
+        {
+            if (_consentEditor != null)
+                return;
+
+            _consentEditor = new ConsentEditor();
+            TabContainer.AddChild(_consentEditor);
+            TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("consent-examine-verb"));
+            _consentTextEdit = _consentEditor.CConsentEditorInput;
+
+            _consentEditor.OnConsentTextChanged += OnConsentTextChange;
         }
 
         /// <summary>
@@ -656,7 +686,9 @@ namespace Content.Client.Lobby.UI
         private void SetDirty()
         {
             // If it equals default then reset the button.
-            if (Profile == null || _preferencesManager.Preferences?.SelectedCharacter.MemberwiseEquals(Profile) == true)
+            if (Profile == null
+                || _preferencesManager.Preferences?.SelectedCharacter.MemberwiseEquals(Profile) == true
+                && _consentManager.GetConsent().Freetext == ConsentText) // Nebulous: Check if consent has changed
             {
                 IsDirty = false;
                 return;
@@ -732,6 +764,7 @@ namespace Content.Client.Lobby.UI
             RefreshSpecies();
             RefreshTraits();
             RefreshFlavorText();
+            RefreshConsentMenu();
             ReloadPreview();
 
             if (Profile != null)
@@ -1019,6 +1052,16 @@ namespace Content.Client.Lobby.UI
             SetDirty();
         }
 
+        // Nebulous: Updates save button for consent text
+        private void OnConsentTextChange(string content)
+        {
+            if (Profile is null)
+                return;
+
+            ConsentText = content;
+            SetDirty();
+        }
+
         private void OnMarkingChange(MarkingSet markings)
         {
             if (Profile is null)
@@ -1204,6 +1247,16 @@ namespace Content.Client.Lobby.UI
             if (_flavorTextEdit != null)
             {
                 _flavorTextEdit.TextRope = new Rope.Leaf(Profile?.FlavorText ?? "");
+            }
+        }
+
+        // Nebulous: Fill consent text with server-side data
+        private void UpdateConsentTextEdit()
+        {
+            if (_consentTextEdit != null)
+            {
+                var consent = _consentManager.GetConsent();
+                _consentTextEdit.TextRope = new Rope.Leaf(consent.Freetext);
             }
         }
 

@@ -1,9 +1,11 @@
 using System.Linq;
+using Content.Client._NS.Consent.Managers;
 using Content.Client.Humanoid;
 using Content.Client.Inventory;
 using Content.Client.Lobby.UI;
 using Content.Client.Players.PlayTimeTracking;
 using Content.Client.Station;
+using Content.Shared._NS.Consent;
 using Content.Shared.CCVar;
 using Content.Shared.Clothing;
 using Content.Shared.GameTicking;
@@ -36,6 +38,7 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IResourceCache _resourceCache = default!;
     [Dependency] private readonly IStateManager _stateManager = default!;
+    [Dependency] private readonly IClientConsentManager _clientConsentManager = default!; // Nebulous: Consent management system
     [Dependency] private readonly JobRequirementsManager _requirements = default!;
     [Dependency] private readonly MarkingManager _markings = default!;
     [UISystemDependency] private readonly HumanoidAppearanceSystem _humanoid = default!;
@@ -54,6 +57,7 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
     /// This is the modified profile currently being edited.
     /// </summary>
     private HumanoidCharacterProfile? EditedProfile => _profileEditor?.Profile;
+    private string? ConsentText => _profileEditor?.ConsentText; // Nebulous
 
     private int? EditedSlot => _profileEditor?.CharacterSlot;
 
@@ -208,7 +212,11 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
         if (selected == null)
             return;
 
+        // Nebulous: Update consent settings
+        _clientConsentManager.UpdateConsent(new PlayerConsentSettings(ConsentText ?? String.Empty));
+
         _preferencesManager.UpdateCharacter(EditedProfile, EditedSlot.Value);
+
         ReloadCharacterSetup();
     }
 
@@ -230,7 +238,8 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
             _playerManager,
             _prototypeManager,
             _requirements,
-            _markings);
+            _markings,
+            _clientConsentManager); // Nebulous: Consent manager
 
         _characterSetup = new CharacterSetupGui(EntityManager, _prototypeManager, _resourceCache, _preferencesManager, _profileEditor);
 
